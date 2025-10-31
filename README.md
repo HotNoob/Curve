@@ -5,6 +5,8 @@ This software is to be released to the public as there is no future plans to fur
 
 So here we have it. 
 
+It is for free for everyone to enjoy...
+
  As the programmer who rewrote all of this... i have no idea how to use it... i just managed to get by via deciphering the spaghetti code... so... good luck!
 
 
