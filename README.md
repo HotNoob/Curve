@@ -10,8 +10,16 @@ It is for free for everyone to enjoy...
  As the programmer who rewrote all of this... i have no idea how to use it... i just managed to get by via deciphering the spaghetti code... so... good luck!
 
 
+
+### Installation ###
+```
+Install Microsoft C++ Build Tools
+Go here: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
+pip3 install -r requirements.txt
+```
+
 ### Basic Usage ###
 ``` 
-pip3 install -r requirements.txt
 python3 -u Curve.py
 ```
