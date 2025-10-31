@@ -13,6 +13,7 @@ It is for free for everyone to enjoy...
 
 ### Installation ###
 Python 3.13.9 
+Python 3.10.19
 
 
 #### Windows ####
