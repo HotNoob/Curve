@@ -14,9 +14,12 @@ It is for free for everyone to enjoy...
 ### Installation ###
 Python 3.13.9 
 
+
+#### Windows ####
 Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": 
 
 https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
 
 ```
 python -m pip install --upgrade pip setuptools wheel
