@@ -5,4 +5,5 @@ Curve is a Geological Petrographic Analysis Tool that was originally created by 
 So here we have it. 
 
 The planned licensing was to be $10000/seat/year and here it is for free for everyone to enjoy...
-and as the programmer who rewrote all of this... i have no idea how to use it... i just managed to get by via deciphering the spaghetti code... so... good luck!
+
+ As the programmer who rewrote all of this... i have no idea how to use it... i just managed to get by via deciphering the spaghetti code... so... good luck!
