@@ -13,9 +13,6 @@ It is for free for everyone to enjoy...
 
 ### Installation ###
 ```
-Install Microsoft C++ Build Tools
-Go here: https://visualstudio.microsoft.com/visual-cpp-build-tools/
-
 pip3 install -r requirements.txt
 ```
 
