@@ -11,4 +11,7 @@ It is for free for everyone to enjoy...
 
 
 ### Basic Usage ###
-``` pip3 install -r requirements.txt ```
+``` 
+pip3 install -r requirements.txt
+python3 -u Curve.py
+```
