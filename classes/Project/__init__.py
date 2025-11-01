@@ -263,7 +263,10 @@ class Project:
         
         if file == '':
             file = self.inDir + '/databases/strat_col.xlsx'
-
+        
+        file = os.path.abspath(file)
+        if(os.path.exists(file) == False):
+            file = 'config/Strat_col.xlsx' #try default location
 
         self.formationZones.clear()
 
@@ -365,7 +368,7 @@ class Project:
                 alert.Error(f'Project {self.file} is missing {name}')
                 return False
         
-        if not self.settings.Get('curveParameterFile'): #if not set, use default mnemoics / curve parameter file
+        if not self.settings.Get('curveParameterFile') or not os.path.exists(self.settings.Get('curveParameterFile')): #if not set, use default mnemoics / curve parameter file
             self.settings.Set('curveParameterFile', global_vars.rootDir + '/config/Mnemonics for logs.xlsx') 
             
         #set name. if not in settings will be blank

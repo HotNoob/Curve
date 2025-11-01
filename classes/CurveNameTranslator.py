@@ -87,6 +87,9 @@ class CurveNameTranslator:
         if(file != ''):
             self.aliasFile = os.path.abspath(file)
 
+        if not os.path.exists(self.aliasFile):
+            self.aliasFile = os.path.dirname(os.path.realpath(__file__))+'/../'+'/config/CurveLogAliasFile.xlsx'
+
         self.aliases.clear()
         self.aliasToName.clear()
         aliasDf = pd.read_excel(self.aliasFile, header=None)

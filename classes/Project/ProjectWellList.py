@@ -180,6 +180,9 @@ class ProjectWellList:
                 #Create empty file
                 # #change back from RAWdir to Indir to save results
                 mpath=global_vars.project.inDir + '/databases/Curve 3 Tops.TXT'
+                if not os.path.exists(os.path.dirname(mpath)):
+                    mpath = global_vars.rootDir+'/config/Curve 3 Tops.TXT'  #try default location
+
                 with open(mpath,'w', encoding=global_vars.fileEncoding) as f:
                     f.write('')
                 f.close()

@@ -12,6 +12,9 @@ from . import alert
 def get_zone():
 
     mpath='databases/strat_col.xlsx'
+    if not os.path.exists(mpath):
+        mpath='config/Strat_col.xlsx'  #try default location
+        
     try:
         get_exceldata(mpath)
     except Exception:

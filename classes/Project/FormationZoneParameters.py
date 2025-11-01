@@ -16,6 +16,9 @@ class FormationZoneParameters:
         if file == '':
             file = global_vars.project.inDir + '/databases/Params.xlsx'
 
+        if os.path.exists(file) == False:
+            file = 'config/Params.xlsx'  #try default location
+
         self.__file = os.path.abspath(file)
         self.parametersFile : str = ''
         self.parameters : dict[str, ZoneParameter] = {}
