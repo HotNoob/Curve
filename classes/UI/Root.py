@@ -256,6 +256,7 @@ class Root:
 
     def Check_Disabled(self, event):
         ''' force minimize if not logged in '''
+
         if not global_vars.login.loggedIn:
             self.window.iconify()
 

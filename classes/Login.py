@@ -18,10 +18,12 @@ import os
 class Login:
     window : webview.Window
     apiClient : APIClient = None
-    loggedIn : bool = False
+    loggedIn : bool = True #skip login
     background_thread : threading.Thread = None
 
     def __init__(self):
+        self.loggedIn = True
+        return #skip login
         if self.is_debugging(): #if debugging, attempt to login via saved session.
             self.apiClient = APIClient()
             if self.apiClient.load_session():
@@ -40,6 +42,8 @@ class Login:
         self.background_thread.start()
 
     def check_session(self) -> bool:
+        return True
+        
         result = self.apiClient.request('check_session')
         return result and (self.apiClient.username) and (result['user'] == self.apiClient.username)
     

@@ -258,9 +258,12 @@ class Project:
     
     def LoadFormationZones(self, file : str = '') -> bool:
         '''loads formation zone data from strat_col.xlsx by default'''
+
+        ##todo, find copy of strat_col.xlsx
         
         if file == '':
             file = self.inDir + '/databases/strat_col.xlsx'
+
 
         self.formationZones.clear()
 
