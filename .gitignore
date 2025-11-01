@@ -1,0 +1,30 @@
+# Ignore Cache Files
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+build/
+dist/
+*.exe
+
+#ignore
+_Plot/
+backup/
+
+#ignore env
+virtualenv/
+
+#ignore vscode 
+.vscode/*
+launch.json
+
+config/init.crv
+Config/init.crv
+init.crv
+init.wnz
+prev.wnz
+*.wnz
+*.crv.*
+LasCache
+session.json
+*.las

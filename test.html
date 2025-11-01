@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script>
+            window.fadeout = function(ms)
+            {
+                pywebview.api.print("Closing... " + ms);
+                ms = parseInt(ms)
+                $('#loading_gif').fadeOut(ms/2);
+                $('#loading_div').fadeOut(ms);
+            }
+             window.addEventListener('pywebviewready', function() 
+             {
+                var container = document.getElementById('version');
+                container.innerHTML = '...';
+                
+                pywebview.api.version().then(function(response)
+                {
+                    container.innerHTML = "Curve " + response;
+                });
+            })
+            $(function()
+            {
+                $('#loading_div').fadeIn(444);
+                $('#logo').fadeIn(1777);
+                $('#loading_gif').fadeIn(3000);
+            });
+        </script>
+    </head>
+    <style>
+        html, body
+        {
+            height: 100%;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            font-family: Calibri;
+            text-align: center; 
+        }
+
+        div {
+            position:relative;
+            height: 100%;
+            width:100%;
+            background-color: #EEE;
+            border-radius: 15px;
+        }
+
+        div img {
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+        }
+        #version
+        {
+            font-size: 10px; 
+            color: #777;
+        }
+        #loading_gif, #loading_div
+        {
+            display:none;
+        }
+    </style>
+    <div id="loading_div">
+        <span id="version" style="margin-top: 30px;"></span>
+        <img id="loading_gif" src='Rolling-2.6s-200px.gif'>
+        <img id="logo" src='Euc.png'>
+    </div>
+</html>

@@ -1,0 +1,10 @@
+{
+    "FAILED_LOAD_LAS" : "Failed to Load LAS Data File ({0}) for {1.uwi}({1.alias})",
+    "MISSING_FORMATION" : "{1.uwi}({1.alias}) does not have Formation '{0}' - Remove From Well List",
+    "MISSING_FORMATION_ZONE" : "{1.uwi}({1.alias}) does not have Formation Zone '{0}' - Remove From Well List",
+    "MISSING_FORMATION_ZONE_SKIP" : "{1.uwi}({1.alias}) does not have Formation Zone '{0}' - well skipped",
+    "MISSING_POROSITY_CURVE_SKIP" : "Missing Porosity Curve '{0}' in {1.uwi}({1.alias}) - well skipped",
+    "MISSING_CURVE_SKIP" : "Missing Curve '{0}' in {1.uwi}({1.alias}) - well skipped",
+    "DICT_OBJECT_EXAMPLE" : "MY MESSAGE {item.prop} {item2} {item3.prop} this can be done",
+    "WRONG_FORMATION_TOP" : "wrong formation top {0} in {1.uwi}({1.alias})"
+}
